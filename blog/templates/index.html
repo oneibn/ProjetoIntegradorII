@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>Golpes digitais</title>
+    <title>Proteção contra vulnerabilidades digitais</title>
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.9/jquery.jcarousel.min.js"></script>
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'blog/styles.css' %}">
-
+    
 </head>
 
 <body>
@@ -24,18 +26,18 @@
                 <li><a href="{% url 'dicas' %}">Dicas</a></li>
                 <li><a href="#sobre">Sobre</a></li>
             </ul>
-
+            
             <!-- <div id="divBusca">
                 <input type="text" id="txtBusca" placeholder="Buscar..." />
                 <img src="{% static 'blog/search.png' %}" id="btnBusca" alt="Buscar" />
             </div> -->
         </nav>
-
-
-
+        
+        
+        
         <div id="home" class="header-content">
-            <h1>Vulnerabilidade digital</h1>
-            <p>Vanha se informar.</p>
+            <h1>Proteção contra vulnerabilidades digitais</h1>
+            <p>Se previna, conheça os tipos e se proteja!</p>
             <button><a href="{% url 'comentarios' %}">Saiba mais</a></button>
         </div>
     </header>
@@ -62,61 +64,61 @@
             </div>
         </div>
     </section>
-
+    
     <section id="dicas" class="dicas">
-
+        
         <h2 class="dicas-title">Confira nossas dicas para não cair em golpes</h2>
-
+        
         <div class="dicas-cards">
-
+            
             <div class="card">
-
+                
                 <div class="card-tag card-tag-top">
                     <p>Dicas</p>
                 </div>
-
+                
                 <img class="card-imag" src="{% static 'blog/lgpd.png' %}" alt="miami">
-
+                
                 <div class="card-content">
                     <h2>Novos golpes aplicados pela internet</h2>
                     <p>Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget...</p>
-
+                    
                     <button><a href="{% url 'dicas' %}">Saiba mais</a></button>
-
+                    
                 </div>
-
+                
             </div>
 
             <div class="card">
                 <div class="card-tag card-tag-top">
                     <p>Dicas</p>
                 </div>
-
+                
                 <img class="card-imag" src="{% static 'blog/seguranca.jpg' %}" alt="russia">
-
+                
                 <div class="card-content">
                     <h2>Novos golpes aplicados pela internet</h2>
                     <p>Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget...</p>
-
+                    
                     <button><a href="{% url 'dicas' %}">Saiba mais</a></button>
-
+                    
                 </div>
-
+                
             </div>
-
+            
             <div class="card">
                 <div class="card-tag card-tag-top">
                     <p>Dicas</p>
                 </div>
-
+                
                 <img class="card-imag" src="{% static 'blog/lgpd2.png' %}" alt="Lençóis Maranhenses">
-
+                
                 <div class="card-content">
                     <h2>Novos golpes aplicados pela internet</h2>
                     <p>Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget...</p>
-
+                    
                     <button><a href="{% url 'dicas' %}">Saiba mais</a></button>
-
+                    
                 </div>
             </div>
         </div>
@@ -132,33 +134,33 @@
                     <p>Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget, sodales tellus eveniet possimus. Iure dolorum lectus varius ipsum repudiandae! Iure congue
                         excepteur. Magna dis magni quasi egestas, repudiandae doloribus maxime minima. Repellat natus venenatis eget fugiat lectus. Aliquet tincidunt netus reiciendis occaecat laoreet? Taciti hac? Aspernatur, ultricies, eu consectetuer,
                         non proin ducimus similique duis, diamlorem, parturient ipsam? </p>
+                    </div>
                 </div>
-            </div>
+                
+                <div class="card">
+                    <i data-feather="message-circle"></i>
+                    <div class="card-content">
+                        <h3>Novos golpes aplicados pela internet</h3>
+                        <p>Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget, sodales tellus eveniet possimus. Iure dolorum lectus varius ipsum repudiandae! Iure congue
+                        excepteur. Magna dis magni quasi egestas, repudiandae doloribus maxime minima. Repellat natus venenatis eget fugiat lectus. Aliquet tincidunt netus reiciendis occaecat laoreet? Taciti hac? Aspernatur, ultricies, eu consectetuer,
+                        non proin ducimus similique duis, diamlorem, parturient ipsam? </p>
+                    </div>
+                </div>
 
-            <div class="card">
-                <i data-feather="message-circle"></i>
-                <div class="card-content">
-                    <h3>Novos golpes aplicados pela internet</h3>
+                <div class="card">
+                    <i data-feather="message-circle"></i>
+                    <div class="card-content">
+                        <h3>Novos golpes aplicados pela internet</h3>
                     <p>Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget, sodales tellus eveniet possimus. Iure dolorum lectus varius ipsum repudiandae! Iure congue
                         excepteur. Magna dis magni quasi egestas, repudiandae doloribus maxime minima. Repellat natus venenatis eget fugiat lectus. Aliquet tincidunt netus reiciendis occaecat laoreet? Taciti hac? Aspernatur, ultricies, eu consectetuer,
                         non proin ducimus similique duis, diamlorem, parturient ipsam? </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <i data-feather="message-circle"></i>
-                <div class="card-content">
-                    <h3>Novos golpes aplicados pela internet</h3>
-                    <p>Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget, sodales tellus eveniet possimus. Iure dolorum lectus varius ipsum repudiandae! Iure congue
-                        excepteur. Magna dis magni quasi egestas, repudiandae doloribus maxime minima. Repellat natus venenatis eget fugiat lectus. Aliquet tincidunt netus reiciendis occaecat laoreet? Taciti hac? Aspernatur, ultricies, eu consectetuer,
-                        non proin ducimus similique duis, diamlorem, parturient ipsam? </p>
-                </div>
+                    </div>
                 <button><a href="{% url 'comentarios' %}">Saiba mais</a></button>
             </div>
         </div>
 
     </section>
-
+    
     <section id="contatos" class="contato">
         <div class="contato-card" id="scrolling-box">
             <h4>
@@ -168,30 +170,17 @@
                 <li><i data-feather="book"></i>Projeto Integrador</li>
                 <li><i data-feather="home"></i>Polo Tecnologico Sorocaba</li>
                 <li><i data-feather="users"></i>110-0018</li>
-
+                
             </ul>
-            </ul>
-            </ul>
+        </ul>
+    </ul>
+    
+</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117111.67099693531!2d-47.50683059089142!3d-23.469851360920426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58abceb48f503%3A0x947f99ac59d0781b!2sSorocaba%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1637523593188!5m2!1spt-BR!2sbr"
+width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-        </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117111.67099693531!2d-47.50683059089142!3d-23.469851360920426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58abceb48f503%3A0x947f99ac59d0781b!2sSorocaba%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1637523593188!5m2!1spt-BR!2sbr"
-            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-    </section>
-
-    <script>
-        feather.replace();
-
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+</section>
+<script src="{% static 'js/script.js' %}"></script>
 </body>
 
 </html>
