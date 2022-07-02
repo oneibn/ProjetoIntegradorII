@@ -65,24 +65,25 @@
     </section>
 
     <section>
-        <h1 class="envio">Conhece um novo golpe? Compartilhe com nossa rede e mantenha todos informados.
+        <h1 class="envio">Presenciou algum golpe diferente? Compartilhe e nos ajude a manter mais pessoas atentas.
         </h1>
-
+        
         <main>
             <form action="{% url 'envio' %}" method="post">
                 {% csrf_token %}
-                <label for="nomesobrenome">Nome e sobrenome</label>
-                <input type="text" id="nomesobrenome" name="nomesobrenome" class="input-padrao" required>
-
+                <label for="nomesobrenome">Nome completo</label>
+                <input type="text" id="nomesobrenome" name="nomesobrenome" class="input-padrao" placeholder="Nome Completo" required>
+                <p>*Seu nome não será divulgado</p>
+                
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" class="input-padrao" required placeholder="seuemail@dominio.com">
 
                 <label for="telefone">Assunto</label>
-                <input type="tel" id="assunto" name="telefone" class="input-padrao" required>
-
+                <input type="tel" id="assunto" name="telefone" class="input-padrao" placeholder="Assunto" required>
+                
                 <label for="mensagem">Mensagem</label>
-                <textarea cols="70" rows="10" name="mensagem" id="mensagem" class="input-padrao" required></textarea>
-
+                <textarea cols="70" rows="10" name="mensagem" id="mensagem" class="input-padrao" placeholder="Seu relato aqui" required></textarea>
+                
                 <input type="submit" value="Enviar" class="enviar">
             </form>
         </main>
@@ -107,20 +108,6 @@
             width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
     </section>
-
-    <script>
-        feather.replace();
-
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
     <script src="{% static 'js/script.js' %}"></script>
 </body>
 
